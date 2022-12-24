@@ -9,6 +9,11 @@ conda create -n MLtests python=3.7
 # activate the new environment
 conda activate MLtests
 
+# add the necessary channels
+conda config --add channels anaconda
+conda config --add channels bioconda
+conda config --add channels conda-forge
+
 # install the dependencies
 conda install -c anaconda argparse
 conda install -c anaconda ipython
